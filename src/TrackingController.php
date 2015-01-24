@@ -25,6 +25,7 @@ class TrackingController extends \yii\base\Behavior
     }
 
     /**
+     * @param string|null $defaultValue
      * @return string|null
      */
     public function getTrackingParam($defaultValue = null)
@@ -37,7 +38,7 @@ class TrackingController extends \yii\base\Behavior
      */
     public function updateTrackingParam()
     {
-        if ($value = \Yii::$app->request->get($this->queryVar))
-            \Yii::$app->session->set($this->sessionVar, $value);
+        if ($value = \Yii::$app->request->get($this->queryParam))
+            \Yii::$app->session->set($this->sessionParam, $value);
     }
 }
