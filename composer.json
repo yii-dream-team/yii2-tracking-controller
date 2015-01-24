@@ -1,0 +1,23 @@
+{
+    "name": "yii-dream-team/yii2-tracking-controller",
+    "description": "Yii2 tracking controller behavior",
+	"keywords": ["yii2", "controller", "url", "tracking", "behavior"],
+	"type": "yii-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Samoylov",
+            "email": "alexey.samoylov@gmail.com",
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiidreamteam\\behaviors\\": "./src"
+        }
+    }
+}
