@@ -30,7 +30,7 @@ class TrackingController extends \yii\base\Behavior
      */
     public function getTrackingParam($defaultValue = null)
     {
-        return \Yii::$app->session->get($this->sessionVar, $defaultValue);
+        return \Yii::$app->session->get($this->sessionParam, $defaultValue);
     }
 
     /**
